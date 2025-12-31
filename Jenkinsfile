@@ -5,6 +5,7 @@ pipeline {
         AWS_REGION = "us-east-1"
         AWS_ACCESS_KEY_ID     = credentials('aws-creds').accessKey
         AWS_SECRET_ACCESS_KEY = credentials('aws-creds').secretKey
+
     }
 
     stages {
@@ -12,7 +13,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/<your-username>/<repo-name>.git'
+                    url: 'https://github.com/kudipudirk/jenkins-terraform.git'
             }
         }
 
