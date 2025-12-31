@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_REGION = "us-east-1"
-        AWS_ACCESS_KEY_ID     = credentials('aws-creds').accessKey
-        AWS_SECRET_ACCESS_KEY = credentials('aws-creds').secretKey
+        /* AWS_ACCESS_KEY_ID     = credentials('aws-creds').accessKey
+        AWS_SECRET_ACCESS_KEY = credentials('aws-creds').secretKey */
 
     }
 
